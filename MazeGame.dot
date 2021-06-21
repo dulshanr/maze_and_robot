@@ -1,0 +1,115 @@
+digraph history {
+graph [nodesep=1.5, ranksep=1.5];
+0 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="maze((1\|-\>1)) = Path,maze((1\|-\>2)) = Path,maze((1\|-\>3)) = Wall,\nmaze((1\|-\>4)) = Path,maze((1\|-\>5)) = Path,maze((2\|-\>1)) = Wall,\nmaze((2\|-\>2)) = Path,maze((2\|-\>3)) = Wall,maze((2\|-\>4)) = Path,\nmaze((2\|-\>5)) = Wall,maze((3\|-\>1)) = Path,maze((3\|-\>2)) = Path,\nmaze((3\|-\>3)) = Wall,maze((3\|-\>4)) = Path,maze((3\|-\>5)) = Path,\nmaze((4\|-\>1)) = Path,maze((4\|-\>2)) = Wall,maze((4\|-\>3)) = Wall,\nmaze((4\|-\>4)) = Wall,maze((4\|-\>5)) = Path,maze((5\|-\>1)) = Path,\nmaze((5\|-\>2)) = Path,maze((5\|-\>3)) = Path,maze((5\|-\>4)) = Path,\nmaze((5\|-\>5)) = Path,maze((6\|-\>1)) = Wall,maze((6\|-\>2)) = Wall,\nmaze((6\|-\>3)) = Path,maze((6\|-\>4)) = Wall,maze((6\|-\>5)) = Path,\nmaze(\"...\") = \"...\",COLUMNS_ROWS = \{(1\|-\>1),(1\|-\>2),(1\|-\>3),(1\|-\>4),(1\|-\>5),(2\|-\>1),(2\|-\>2),(2\|-\>3),(2\|-\>4),(2\|-\>5),(3\|-\>1),(3\|-\>2),(3\|-\>3),(3\|-\>4),(3\|-\>5),(4\|-\>1),(4\|-\>2),(4\|-\>3),(4\|-\>4),(4\|-\>5),(5\|-\>1),(5\|-\>2),(5\|-\>3),(5\|-\>4),(5\|-\>5),(6\|-\>1),(6\|-\>2),(6\|-\>3),(6\|-\>4),(6\|-\>5),(7\|-\>1),(7\|-\>2),(7\|-\>3),(7\|-\>4),(7\|-\>5)\},ROWS = \{1,2,3,4,5\},\nCOLUMNS = \{1,2,3,4,5,6,7\},totalSpace((1\|-\>1)) = Path,totalSpace((1\|-\>2)) = Path,\ntotalSpace((1\|-\>3)) = Path,totalSpace((1\|-\>4)) = Path,totalSpace((1\|-\>5)) = Path,\ntotalSpace((2\|-\>1)) = Path,totalSpace((2\|-\>2)) = Path,totalSpace((2\|-\>3)) = Path,\ntotalSpace((2\|-\>4)) = Path,totalSpace((2\|-\>5)) = Path,totalSpace((3\|-\>1)) = Path,\ntotalSpace((3\|-\>2)) = Path,totalSpace((3\|-\>3)) = Path,totalSpace((3\|-\>4)) = Path,\ntotalSpace((3\|-\>5)) = Path,totalSpace((4\|-\>1)) = Path,totalSpace((4\|-\>2)) = Path,\ntotalSpace((4\|-\>3)) = Path,totalSpace((4\|-\>4)) = Path,totalSpace((4\|-\>5)) = Path,\ntotalSpace((5\|-\>1)) = Path,totalSpace((5\|-\>2)) = Path,totalSpace((5\|-\>3)) = Path,\ntotalSpace((5\|-\>4)) = Path,totalSpace((5\|-\>5)) = Path,totalSpace((6\|-\>1)) = Path,\ntotalSpace((6\|-\>2)) = Path,totalSpace((6\|-\>3)) = Path,totalSpace((6\|-\>4)) = Path,\ntotalSpace((6\|-\>5)) = Path,totalSpace(\"...\") = \"...\",wallSpace((1\|-\>3)) = Wall,\nwallSpace((2\|-\>1)) = Wall,wallSpace((2\|-\>3)) = Wall,wallSpace((2\|-\>5)) = Wall,\nwallSpace((3\|-\>3)) = Wall,wallSpace((4\|-\>2)) = Wall,wallSpace((4\|-\>3)) = Wall,\nwallSpace((4\|-\>4)) = Wall,wallSpace((6\|-\>1)) = Wall,wallSpace((6\|-\>2)) = Wall,\nwallSpace((6\|-\>4)) = Wall,wallSpace((7\|-\>4)) = Wall,exit = (1\|-\>5),\ny_max = 5,y_min = 1,x_max = 7,\nx_min = 1,north_anti_range = \{(1\|-\>2),(1\|-\>5),(2\|-\>2),(2\|-\>4),(2\|-\>5),(3\|-\>2),(3\|-\>5),(4\|-\>1),(4\|-\>5),(5\|-\>5),(6\|-\>3),(6\|-\>5),(7\|-\>3),(7\|-\>5)\},xx = 1,\nyy = 2,south_anti_range = \{(1\|-\>1),(1\|-\>4),(2\|-\>1),(2\|-\>2),(2\|-\>4),(3\|-\>1),(3\|-\>4),(4\|-\>1),(4\|-\>5),(5\|-\>1),(6\|-\>1),(6\|-\>3),(6\|-\>5),(7\|-\>1),(7\|-\>5)\},west_anti_range = \{(1\|-\>1),(1\|-\>2),(1\|-\>3),(1\|-\>4),(1\|-\>5),(3\|-\>1),(3\|-\>5),(5\|-\>2),(5\|-\>3),(5\|-\>4),(7\|-\>1),(7\|-\>2)\},\neast_anti_range = \{(1\|-\>1),(1\|-\>5),(3\|-\>2),(3\|-\>4),(5\|-\>1),(5\|-\>2),(5\|-\>4),(7\|-\>1),(7\|-\>2),(7\|-\>3),(7\|-\>4),(7\|-\>5)\}"];
+
+1 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="currentLocation = (1\|-\>1),robotRoute = []"];
+
+2 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="currentLocation = (1\|-\>2),robotRoute(1) = (1\|-\>1)"];
+
+11 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="currentLocation = (2\|-\>2),robotRoute(1) = (1\|-\>2),robotRoute(2) = (1\|-\>1)"];
+
+19 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="currentLocation = (3\|-\>2),robotRoute(1) = (2\|-\>2),robotRoute(2) = (1\|-\>2),\nrobotRoute(3) = (1\|-\>1)"];
+
+26 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="currentLocation = (3\|-\>1),robotRoute(1) = (3\|-\>2),robotRoute(2) = (2\|-\>2),\nrobotRoute(3) = (1\|-\>2),robotRoute(4) = (1\|-\>1)"];
+
+35 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="currentLocation = (4\|-\>1),robotRoute(1) = (3\|-\>1),robotRoute(2) = (3\|-\>2),\nrobotRoute(3) = (2\|-\>2),robotRoute(4) = (1\|-\>2),robotRoute(5) = (1\|-\>1)"];
+
+43 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="currentLocation = (5\|-\>1),robotRoute(1) = (4\|-\>1),robotRoute(2) = (3\|-\>1),\nrobotRoute(3) = (3\|-\>2),robotRoute(4) = (2\|-\>2),robotRoute(5) = (1\|-\>2),\nrobotRoute(6) = (1\|-\>1)"];
+
+50 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="currentLocation = (5\|-\>2),robotRoute(1) = (5\|-\>1),robotRoute(2) = (4\|-\>1),\nrobotRoute(3) = (3\|-\>1),robotRoute(4) = (3\|-\>2),robotRoute(5) = (2\|-\>2),\nrobotRoute(6) = (1\|-\>2),robotRoute(7) = (1\|-\>1)"];
+
+59 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="currentLocation = (5\|-\>3),robotRoute(1) = (5\|-\>2),robotRoute(2) = (5\|-\>1),\nrobotRoute(3) = (4\|-\>1),robotRoute(4) = (3\|-\>1),robotRoute(5) = (3\|-\>2),\nrobotRoute(6) = (2\|-\>2),robotRoute(7) = (1\|-\>2),robotRoute(8) = (1\|-\>1)"];
+
+68 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="currentLocation = (5\|-\>4),robotRoute(1) = (5\|-\>3),robotRoute(2) = (5\|-\>2),\nrobotRoute(3) = (5\|-\>1),robotRoute(4) = (4\|-\>1),robotRoute(5) = (3\|-\>1),\nrobotRoute(6) = (3\|-\>2),robotRoute(7) = (2\|-\>2),robotRoute(8) = (1\|-\>2),\nrobotRoute(9) = (1\|-\>1)"];
+
+79 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="currentLocation = (5\|-\>5),robotRoute(1) = (5\|-\>4),robotRoute(2) = (5\|-\>3),\nrobotRoute(3) = (5\|-\>2),robotRoute(4) = (5\|-\>1),robotRoute(5) = (4\|-\>1),\nrobotRoute(6) = (3\|-\>1),robotRoute(7) = (3\|-\>2),robotRoute(8) = (2\|-\>2),\nrobotRoute(9) = (1\|-\>2),robotRoute(10) = (1\|-\>1)"];
+
+90 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="currentLocation = (4\|-\>5),robotRoute(1) = (5\|-\>5),robotRoute(2) = (5\|-\>4),\nrobotRoute(3) = (5\|-\>3),robotRoute(4) = (5\|-\>2),robotRoute(5) = (5\|-\>1),\nrobotRoute(6) = (4\|-\>1),robotRoute(7) = (3\|-\>1),robotRoute(8) = (3\|-\>2),\nrobotRoute(9) = (2\|-\>2),robotRoute(10) = (1\|-\>2),robotRoute(11) = (1\|-\>1)"];
+
+106 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="currentLocation = (7\|-\>1),robotRoute(1) = (4\|-\>5),robotRoute(2) = (5\|-\>5),\nrobotRoute(3) = (5\|-\>4),robotRoute(4) = (5\|-\>3),robotRoute(5) = (5\|-\>2),\nrobotRoute(6) = (5\|-\>1),robotRoute(7) = (4\|-\>1),robotRoute(8) = (3\|-\>1),\nrobotRoute(9) = (3\|-\>2),robotRoute(10) = (2\|-\>2),robotRoute(11) = (1\|-\>2),\nrobotRoute(12) = (1\|-\>1)"];
+
+110 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="currentLocation = (7\|-\>2),robotRoute(1) = (7\|-\>1),robotRoute(2) = (4\|-\>5),\nrobotRoute(3) = (5\|-\>5),robotRoute(4) = (5\|-\>4),robotRoute(5) = (5\|-\>3),\nrobotRoute(6) = (5\|-\>2),robotRoute(7) = (5\|-\>1),robotRoute(8) = (4\|-\>1),\nrobotRoute(9) = (3\|-\>1),robotRoute(10) = (3\|-\>2),robotRoute(11) = (2\|-\>2),\nrobotRoute(12) = (1\|-\>2),robotRoute(13) = (1\|-\>1)"];
+
+119 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="currentLocation = (7\|-\>3),robotRoute(1) = (7\|-\>2),robotRoute(2) = (7\|-\>1),\nrobotRoute(3) = (4\|-\>5),robotRoute(4) = (5\|-\>5),robotRoute(5) = (5\|-\>4),\nrobotRoute(6) = (5\|-\>3),robotRoute(7) = (5\|-\>2),robotRoute(8) = (5\|-\>1),\nrobotRoute(9) = (4\|-\>1),robotRoute(10) = (3\|-\>1),robotRoute(11) = (3\|-\>2),\nrobotRoute(12) = (2\|-\>2),robotRoute(13) = (1\|-\>2),robotRoute(14) = (1\|-\>1)"];
+
+129 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="currentLocation = (6\|-\>3),robotRoute(1) = (7\|-\>3),robotRoute(2) = (7\|-\>2),\nrobotRoute(3) = (7\|-\>1),robotRoute(4) = (4\|-\>5),robotRoute(5) = (5\|-\>5),\nrobotRoute(6) = (5\|-\>4),robotRoute(7) = (5\|-\>3),robotRoute(8) = (5\|-\>2),\nrobotRoute(9) = (5\|-\>1),robotRoute(10) = (4\|-\>1),robotRoute(11) = (3\|-\>1),\nrobotRoute(12) = (3\|-\>2),robotRoute(13) = (2\|-\>2),robotRoute(14) = (1\|-\>2),\nrobotRoute(15) = (1\|-\>1)"];
+
+138 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="currentLocation = (5\|-\>3),robotRoute(1) = (6\|-\>3),robotRoute(2) = (7\|-\>3),\nrobotRoute(3) = (7\|-\>2),robotRoute(4) = (7\|-\>1),robotRoute(5) = (4\|-\>5),\nrobotRoute(6) = (5\|-\>5),robotRoute(7) = (5\|-\>4),robotRoute(8) = (5\|-\>3),\nrobotRoute(9) = (5\|-\>2),robotRoute(10) = (5\|-\>1),robotRoute(11) = (4\|-\>1),\nrobotRoute(12) = (3\|-\>1),robotRoute(13) = (3\|-\>2),robotRoute(14) = (2\|-\>2),\nrobotRoute(15) = (1\|-\>2),robotRoute(16) = (1\|-\>1)"];
+
+148 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="currentLocation = (5\|-\>4),robotRoute(1) = (5\|-\>3),robotRoute(2) = (6\|-\>3),\nrobotRoute(3) = (7\|-\>3),robotRoute(4) = (7\|-\>2),robotRoute(5) = (7\|-\>1),\nrobotRoute(6) = (4\|-\>5),robotRoute(7) = (5\|-\>5),robotRoute(8) = (5\|-\>4),\nrobotRoute(9) = (5\|-\>3),robotRoute(10) = (5\|-\>2),robotRoute(11) = (5\|-\>1),\nrobotRoute(12) = (4\|-\>1),robotRoute(13) = (3\|-\>1),robotRoute(14) = (3\|-\>2),\nrobotRoute(15) = (2\|-\>2),robotRoute(16) = (1\|-\>2),robotRoute(17) = (1\|-\>1)"];
+
+159 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="currentLocation = (5\|-\>5),robotRoute(1) = (5\|-\>4),robotRoute(2) = (5\|-\>3),\nrobotRoute(3) = (6\|-\>3),robotRoute(4) = (7\|-\>3),robotRoute(5) = (7\|-\>2),\nrobotRoute(6) = (7\|-\>1),robotRoute(7) = (4\|-\>5),robotRoute(8) = (5\|-\>5),\nrobotRoute(9) = (5\|-\>4),robotRoute(10) = (5\|-\>3),robotRoute(11) = (5\|-\>2),\nrobotRoute(12) = (5\|-\>1),robotRoute(13) = (4\|-\>1),robotRoute(14) = (3\|-\>1),\nrobotRoute(15) = (3\|-\>2),robotRoute(16) = (2\|-\>2),robotRoute(17) = (1\|-\>2),\nrobotRoute(18) = (1\|-\>1)"];
+
+170 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="currentLocation = (4\|-\>5),robotRoute(1) = (5\|-\>5),robotRoute(2) = (5\|-\>4),\nrobotRoute(3) = (5\|-\>3),robotRoute(4) = (6\|-\>3),robotRoute(5) = (7\|-\>3),\nrobotRoute(6) = (7\|-\>2),robotRoute(7) = (7\|-\>1),robotRoute(8) = (4\|-\>5),\nrobotRoute(9) = (5\|-\>5),robotRoute(10) = (5\|-\>4),robotRoute(11) = (5\|-\>3),\nrobotRoute(12) = (5\|-\>2),robotRoute(13) = (5\|-\>1),robotRoute(14) = (4\|-\>1),\nrobotRoute(15) = (3\|-\>1),robotRoute(16) = (3\|-\>2),robotRoute(17) = (2\|-\>2),\nrobotRoute(18) = (1\|-\>2),robotRoute(19) = (1\|-\>1)"];
+
+180 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="currentLocation = (3\|-\>5),robotRoute(1) = (4\|-\>5),robotRoute(2) = (5\|-\>5),\nrobotRoute(3) = (5\|-\>4),robotRoute(4) = (5\|-\>3),robotRoute(5) = (6\|-\>3),\nrobotRoute(6) = (7\|-\>3),robotRoute(7) = (7\|-\>2),robotRoute(8) = (7\|-\>1),\nrobotRoute(9) = (4\|-\>5),robotRoute(10) = (5\|-\>5),robotRoute(11) = (5\|-\>4),\nrobotRoute(12) = (5\|-\>3),robotRoute(13) = (5\|-\>2),robotRoute(14) = (5\|-\>1),\nrobotRoute(15) = (4\|-\>1),robotRoute(16) = (3\|-\>1),robotRoute(17) = (3\|-\>2),\nrobotRoute(18) = (2\|-\>2),robotRoute(19) = (1\|-\>2),robotRoute(20) = (1\|-\>1)"];
+
+190 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="currentLocation = (3\|-\>4),robotRoute(1) = (3\|-\>5),robotRoute(2) = (4\|-\>5),\nrobotRoute(3) = (5\|-\>5),robotRoute(4) = (5\|-\>4),robotRoute(5) = (5\|-\>3),\nrobotRoute(6) = (6\|-\>3),robotRoute(7) = (7\|-\>3),robotRoute(8) = (7\|-\>2),\nrobotRoute(9) = (7\|-\>1),robotRoute(10) = (4\|-\>5),robotRoute(11) = (5\|-\>5),\nrobotRoute(12) = (5\|-\>4),robotRoute(13) = (5\|-\>3),robotRoute(14) = (5\|-\>2),\nrobotRoute(15) = (5\|-\>1),robotRoute(16) = (4\|-\>1),robotRoute(17) = (3\|-\>1),\nrobotRoute(18) = (3\|-\>2),robotRoute(19) = (2\|-\>2),robotRoute(20) = (1\|-\>2),\nrobotRoute(21) = (1\|-\>1)"];
+
+201 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="currentLocation = (2\|-\>4),robotRoute(1) = (3\|-\>4),robotRoute(2) = (3\|-\>5),\nrobotRoute(3) = (4\|-\>5),robotRoute(4) = (5\|-\>5),robotRoute(5) = (5\|-\>4),\nrobotRoute(6) = (5\|-\>3),robotRoute(7) = (6\|-\>3),robotRoute(8) = (7\|-\>3),\nrobotRoute(9) = (7\|-\>2),robotRoute(10) = (7\|-\>1),robotRoute(11) = (4\|-\>5),\nrobotRoute(12) = (5\|-\>5),robotRoute(13) = (5\|-\>4),robotRoute(14) = (5\|-\>3),\nrobotRoute(15) = (5\|-\>2),robotRoute(16) = (5\|-\>1),robotRoute(17) = (4\|-\>1),\nrobotRoute(18) = (3\|-\>1),robotRoute(19) = (3\|-\>2),robotRoute(20) = (2\|-\>2),\nrobotRoute(21) = (1\|-\>2),robotRoute(22) = (1\|-\>1)"];
+
+210 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="currentLocation = (1\|-\>4),robotRoute(1) = (2\|-\>4),robotRoute(2) = (3\|-\>4),\nrobotRoute(3) = (3\|-\>5),robotRoute(4) = (4\|-\>5),robotRoute(5) = (5\|-\>5),\nrobotRoute(6) = (5\|-\>4),robotRoute(7) = (5\|-\>3),robotRoute(8) = (6\|-\>3),\nrobotRoute(9) = (7\|-\>3),robotRoute(10) = (7\|-\>2),robotRoute(11) = (7\|-\>1),\nrobotRoute(12) = (4\|-\>5),robotRoute(13) = (5\|-\>5),robotRoute(14) = (5\|-\>4),\nrobotRoute(15) = (5\|-\>3),robotRoute(16) = (5\|-\>2),robotRoute(17) = (5\|-\>1),\nrobotRoute(18) = (4\|-\>1),robotRoute(19) = (3\|-\>1),robotRoute(20) = (3\|-\>2),\nrobotRoute(21) = (2\|-\>2),robotRoute(22) = (1\|-\>2),robotRoute(23) = (1\|-\>1)"];
+
+220 [shape=doubleoctagon, color="#99BF38", fontsize=12, penwidth=2, label="currentLocation = (1\|-\>5),robotRoute(1) = (1\|-\>4),robotRoute(2) = (2\|-\>4),\nrobotRoute(3) = (3\|-\>4),robotRoute(4) = (3\|-\>5),robotRoute(5) = (4\|-\>5),\nrobotRoute(6) = (5\|-\>5),robotRoute(7) = (5\|-\>4),robotRoute(8) = (5\|-\>3),\nrobotRoute(9) = (6\|-\>3),robotRoute(10) = (7\|-\>3),robotRoute(11) = (7\|-\>2),\nrobotRoute(12) = (7\|-\>1),robotRoute(13) = (4\|-\>5),robotRoute(14) = (5\|-\>5),\nrobotRoute(15) = (5\|-\>4),robotRoute(16) = (5\|-\>3),robotRoute(17) = (5\|-\>2),\nrobotRoute(18) = (5\|-\>1),robotRoute(19) = (4\|-\>1),robotRoute(20) = (3\|-\>1),\nrobotRoute(21) = (3\|-\>2),robotRoute(22) = (2\|-\>2),robotRoute(23) = (1\|-\>2),\nrobotRoute(24) = (1\|-\>1)"];
+
+root [shape=invtriangle, color="#99BF38", fontsize=12, penwidth=2, label="root"];
+
+root -> 0 [style = dotted, color = black, label="SETUP_CONSTANTS", fontsize=12];
+
+0 -> 1 [color = "#006391", label="INITIALISATION", fontsize=12];
+
+1 -> 2 [color = "#006391", label="navigateNorth--\>MovedNorth,ClearPath", fontsize=12];
+1 -> 2 [color = "#006391", label="teleport_robot((1\|-\>2))--\>Teleported,ClearPath", fontsize=12];
+
+2 -> 11 [color = "#006391", label="navigateEast--\>MovedEast,ClearPath", fontsize=12];
+2 -> 11 [color = "#006391", label="teleport_robot((2\|-\>2))--\>Teleported,ClearPath", fontsize=12];
+
+11 -> 19 [color = "#006391", label="navigateEast--\>MovedEast,ClearPath", fontsize=12];
+11 -> 19 [color = "#006391", label="teleport_robot((3\|-\>2))--\>Teleported,ClearPath", fontsize=12];
+
+19 -> 26 [color = "#006391", label="navigateSouth--\>MovedSouth,ClearPath", fontsize=12];
+19 -> 26 [color = "#006391", label="teleport_robot((3\|-\>1))--\>Teleported,ClearPath", fontsize=12];
+
+26 -> 35 [color = "#006391", label="navigateEast--\>MovedEast,ClearPath", fontsize=12];
+26 -> 35 [color = "#006391", label="teleport_robot((4\|-\>1))--\>Teleported,ClearPath", fontsize=12];
+
+35 -> 43 [color = "#006391", label="navigateEast--\>MovedEast,ClearPath", fontsize=12];
+35 -> 43 [color = "#006391", label="teleport_robot((5\|-\>1))--\>Teleported,ClearPath", fontsize=12];
+
+43 -> 50 [color = "#006391", label="navigateNorth--\>MovedNorth,ClearPath", fontsize=12];
+
+50 -> 59 [color = "#006391", label="navigateNorth--\>MovedNorth,ClearPath", fontsize=12];
+
+59 -> 68 [color = "#006391", label="navigateNorth--\>MovedNorth,ClearPath", fontsize=12];
+
+68 -> 79 [color = "#006391", label="navigateNorth--\>MovedNorth,ClearPath", fontsize=12];
+
+79 -> 90 [color = "#006391", label="navigateWest--\>MovedWest,ClearPath", fontsize=12];
+
+90 -> 106 [color = "#006391", label="teleport_robot((7\|-\>1))--\>Teleported,ClearPath", fontsize=12];
+
+106 -> 110 [color = "#006391", label="navigateNorth--\>MovedNorth,ClearPath", fontsize=12];
+
+110 -> 119 [color = "#006391", label="navigateNorth--\>MovedNorth,ClearPath", fontsize=12];
+
+119 -> 129 [color = "#006391", label="navigateWest--\>MovedWest,ClearPath", fontsize=12];
+
+129 -> 138 [color = "#006391", label="navigateWest--\>MovedWest,ClearPath", fontsize=12];
+
+138 -> 148 [color = "#006391", label="navigateNorth--\>MovedNorth,ClearPath", fontsize=12];
+
+148 -> 159 [color = "#006391", label="navigateNorth--\>MovedNorth,ClearPath", fontsize=12];
+
+159 -> 170 [color = "#006391", label="navigateWest--\>MovedWest,ClearPath", fontsize=12];
+
+170 -> 180 [color = "#006391", label="navigateWest--\>MovedWest,ClearPath", fontsize=12];
+
+180 -> 190 [color = "#006391", label="navigateSouth--\>MovedSouth,ClearPath", fontsize=12];
+
+190 -> 201 [color = "#006391", label="navigateWest--\>MovedWest,ClearPath", fontsize=12];
+
+201 -> 210 [color = "#006391", label="navigateWest--\>MovedWest,ClearPath", fontsize=12];
+
+210 -> 220 [color = "#006391", label="navigateNorth--\>MovedNorth,ClearPath", fontsize=12];
+
+}
